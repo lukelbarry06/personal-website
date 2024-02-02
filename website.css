@@ -1,0 +1,159 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-image: repeating-linear-gradient(45deg, #C5B4E3 0, #C5B4E3 2px, transparent 0, transparent 50%);
+    background-color: #d4d4f7;
+    background-size: 54px 54px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border-color: purple;
+}
+
+small {
+    color: grey;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar {
+    width: 15%;
+    height: 500px;
+    margin: 20px;
+    background-color: plum;
+}
+
+.main-body {
+    width: 50%;
+    min-width: 200px;
+    background-color: lavender;
+    border: 5px purple dashed;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.links {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#introduction {
+    margin: 15px;
+}
+
+/* Tiny devices (smallest phones) */
+@media only screen and (min-width: 300px) {
+    .main-body {
+        width: 100%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main-body {
+        width: 90%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main-body {
+        width: 80%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main-body {
+        width: 80%;
+    }
+    .sidebar {
+        display: 20%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-body {
+        width: 50%;
+    }
+    .sidebar {
+        width: 25%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .main-body {
+        width: 50%;
+    }
+    .sidebar {
+        width: 25%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .sidebar {
+      display: block;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .sidebar {
+        display: none;
+    }
+}
