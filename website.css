@@ -3,18 +3,15 @@ html, body {
     min-width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 html {
     background-image: repeating-linear-gradient(45deg, #C5B4E3 0, #C5B4E3 2px, transparent 0, transparent 50%);
     background-color: #d4d4f7;
     background-size: 54px 54px;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 h1, h2 {
@@ -48,7 +45,7 @@ footer {
 .main-body {
     width: 50%;
     min-width: 200px;
-    max-width:600px;
+    max-width: 600px;
     background-color: lavender;
     border: 5px purple dashed;
     border-radius: 50px;
